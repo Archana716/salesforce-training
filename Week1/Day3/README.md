@@ -21,33 +21,7 @@
   - A Professor teaches many Courses (One-to-Many).
   - Each Course belongs to one Department (Many-to-One).
 - **Diagram/Image:**
-  ```mermaid
-erDiagram
-
-    STUDENT {
-        int student_id
-        string name
-    }
-
-    COURSE {
-        int course_id
-        string course_name
-    }
-
-    DEPARTMENT {
-        int dept_id
-        string dept_name
-    }
-
-    PROFESSOR {
-        int professor_id
-        string professor_name
-    }
-
-    STUDENT }o--o{ COURSE : "Enrolls In"
-    COURSE }o--|| DEPARTMENT : "Belongs To"
-    PROFESSOR ||--o{ COURSE : "Teaches"
-```
+ 
 
 ## 4. Formula Fields
 Formula fields automatically calculate values based on other fields.
